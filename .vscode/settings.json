@@ -1,0 +1,12 @@
+{
+    "less.compile": {
+        "compress": false, // true => remove surplus whitespace
+        "sourceMap": true, // true => generate source maps (.css.map files)
+        "relativeUrls": false,
+        "outExt": ".min.css",
+        "autoprefixer": "> 5%, last 2 Chrome versions, not ie 6-9",
+        "main": ["${workspaceRoot}\\local\\resources\\assets\\less\\style.less"],
+        "out": "${workspaceRoot}\\css\\" // false => DON'T output .css files (overridable per-file, see below)
+
+    }
+}
